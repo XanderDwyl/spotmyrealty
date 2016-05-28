@@ -22,5 +22,10 @@ module Spotmyrealty
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # haml settings
+    config.generators do |g|
+      g.template_engine :haml
+    end
   end
 end
