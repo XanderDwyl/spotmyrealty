@@ -1,0 +1,15 @@
+!!!
+%html{:lang => 'en', :prefix => 'og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml', :dir => 'ltr'}
+  %head
+    %title SpotMyRealty
+    %meta{charset: 'UTF-8'}/
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no", :name => "viewport"}
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+
+  %body
+    = yield
+
+
