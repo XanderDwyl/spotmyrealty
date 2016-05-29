@@ -1,30 +1,42 @@
-.ui.attached.stackable.menu
+.ui.large.top.fixed.hidden.menu
   .ui.container
-    %a.item
-      %i.home.icon
-      Home
-    %a.item
-      %i.grid.layout.icon
-      Browse
-    %a.item
-      %i.mail.icon
-      Messages
-    .ui.simple.dropdown.item.right
-      %img.ui.mini.circular.image{:src => "/assets/elyse.png"}
-        .content
-          .ui.sub.header Elyse
-          Land Master Agent
-      %i.dropdown.icon
-      .menu
-        %a.item
-          %i.edit.icon
-          Edit Profile
-        %a.item
-          %i.globe.icon
-          Choose Language
-        %a.item
-          %i.settings.icon
-          Account Settings
+    %a.active.item Home
+    %a.item Work
+    %a.item Company
+    %a.item Careers
+    .right.menu
+      .item
+        %a.ui.button Log in
+      .item
+        %a.ui.primary.button Sign Up
 
+.ui.vertical.sidebar.menu.left
+  %a.active.item Home
+  %a.item Work
+  %a.item Company
+  %a.item Careers
+  %a.item Login
+  %a.item Signup
+
+.pusher
+  .ui.vertical.masthead.center.aligned.segment
+    .ui.container
+      .ui.large.secondary.pointing.menu
+        %a.toc.item
+          %i.sidebar.icon
+        %a.active.item Home
+        %a.item Work
+        %a.item Company
+        %a.item Careers
+        .right.item
+          %a.ui.button Log in
+          %a.ui.button Sign Up
+
+    .ui.text.container
+      %h1.ui.header
+        Spot My Realty
+      %h2 Do whatever you want when you want to.
+      .ui.huge.button
+        Sign Up for free
 
 
